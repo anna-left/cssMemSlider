@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssMemSlider</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <section class="container">
+        <ol class="container__viewport">
+            <li id="container__slide1" tabindex="0" class="container__slide">
+                <img srcset="./img/slide1s.jpg 420w,
+                             ./img/slide1.jpg 1000w" sizes="(max-width: 420px) 26.25rem,
+                     1000px" src="./img/slide1.jpg" alt="slide1">
+
+                <div class="description">Когда нашел баг в коде за час до дедлайна</div>
+            </li>
+            <li id="container__slide2" tabindex="0" class="container__slide">
+                <img srcset="./img/slide2s.jpg 420w,
+                             ./img/slide2.jpg 1000w" sizes="(max-width: 420px) 26.25rem,
+                             1000px" src="./img/slide2.jpg" alt="slide2">
+
+                <div class="description">Но ведь работает же?</div>
+            </li>
+            <li id="container__slide3" tabindex="0" class="container__slide">
+                <img srcset="./img/slide3s.jpg 420w,
+                             ./img/slide3.jpg 1000w" sizes="(max-width: 420px) 26.25rem,
+                             1000px" src="./img/slide3.jpg" alt="slide3">
+
+                <div class="description">От любви до ненависти один шаг</div>
+            </li>
+            <li id="container__slide4" tabindex="0" class="container__slide">
+                <img srcset="./img/slide4s.jpg 420w,
+                             ./img/slide4.jpg 1000w" sizes="(max-width: 420px) 26.25rem,
+                             1000px" src="./img/slide4.jpg" alt="slide4">
+                <div class="description">Да что ты знаешь о боли?</div>
+            </li>
+        </ol>
+        <aside class="container__navigation">
+            <ol class="container__navigation-list">
+                <li class="container__navigation-item">
+                    <a href="#container__slide1" class="container__navigation-bullet"></a>
+                </li>
+                <li class="container__navigation-item">
+                    <a href="#container__slide2" class="container__navigation-bullet"></a>
+                </li>
+                <li class="container__navigation-item">
+                    <a href="#container__slide3" class="container__navigation-bullet"></a>
+                </li>
+                <li class="container__navigation-item">
+                    <a href="#container__slide4" class="container__navigation-bullet"></a>
+                </li>
+            </ol>
+        </aside>
+    </section>
+</body>
+
+</html>
