@@ -1,0 +1,119 @@
+
+body {
+  max-width: 62.5rem;
+  margin: 0 auto;
+  /* padding: 0 1.25rem; */
+  font-family: 'Lato', sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+/* * {
+  -ms-overflow-style: none;
+} */
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  /* padding-top: 90%; */
+  /* margin-left: 0 auto;
+  margin-right: 0 auto; */
+  display: flex;
+  flex-direction: column;
+}
+
+.container__viewport {
+  padding-top: 10%;
+  /* top: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.container__slide {
+  position: relative;
+  /* flex: 0 0 100%; */
+  width: 100%;
+  /* height: 100%; */
+  background-color: rgb(0, 0, 0);
+  counter-increment: item;
+  
+}
+
+.description{
+  bottom: 6rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.container__slide:nth-child(even) {
+  background-color: rgb(0, 0, 0);
+}
+
+.container__navigation {
+  /* bottom: 6.5rem; */
+  width: 15%;
+  /* text-align: end; */
+  background-color: black;
+  margin-left: auto;
+  margin-right: 0;
+  transform: translateY(-2.7rem);
+}
+
+.container__navigation-item {
+  display: inline-block;
+}
+.container__navigation-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container__navigation-bullet {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgb(46, 62, 151);
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+.container__navigation-bullet:active{
+  background-color: rgb(245, 6, 6);
+}
+/* .container__navigation-bullet:focus{
+  background-color: rgb(99, 48, 73);
+} */
+.container__navigation-bullet:hover{
+  filter: brightness(3);
+}
+
