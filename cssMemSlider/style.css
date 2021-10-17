@@ -23,10 +23,6 @@ body {
   border: none;
 }
 
-/* * {
-  -ms-overflow-style: none;
-} */
-
 ol, li {
   list-style: none;
   margin: 0;
@@ -35,18 +31,12 @@ ol, li {
 
 .container {
   position: relative;
-  /* padding-top: 90%; */
-  /* margin-left: 0 auto;
-  margin-right: 0 auto; */
   display: flex;
   flex-direction: column;
 }
 
 .container__viewport {
   padding-top: 10%;
-  /* top: 0; */
-  /* right: 0; */
-  /* bottom: 0; */
   margin-left: 0;
   margin-right: 0;
   max-width: 100%;
@@ -58,33 +48,10 @@ ol, li {
 
 .container__slide {
   position: relative;
-  /* flex: 0 0 100%; */
   width: 100%;
-  /* height: 100%; */
   background-color: rgb(0, 0, 0);
   counter-increment: item;
-  /* background-position: center center; */
-  /* background-repeat: no-repeat; */
-  /* background-size: contain; */
-  /* margin: 0; */
-  /* align-items: center; */
 }
-
-/* #container__slide1{
-  background-image:  url("./img/slide1.jpg");;
-}
-
-#container__slide2{
-  background-image:  url("./img/slide2.jpg");
-}
-
-#container__slide3{
-  background-image:  url("./img/slide3.jpg");
-}
-
-#container__slide4{
-  background-image:  url("./img/slide4.jpg");
-} */
 
 .description{
   bottom: 6rem;
@@ -97,9 +64,7 @@ ol, li {
 }
 
 .container__navigation {
-  /* bottom: 6.5rem; */
   width: 15%;
-  /* text-align: end; */
   background-color: black;
   margin-left: auto;
   margin-right: 0;
@@ -117,11 +82,11 @@ ol, li {
 
 .container__navigation-bullet {
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   background-color: rgb(46, 62, 151);
   background-clip: content-box;
-  border: 0.25rem solid transparent;
+  border: 0.5rem solid transparent;
   border-radius: 50%;
   font-size: 0;
   transition: transform 0.1s;
@@ -129,41 +94,20 @@ ol, li {
 .container__navigation-bullet:active{
   background-color: rgb(245, 6, 6);
 }
-/* .container__navigation-bullet:focus{
-  background-color: rgb(99, 48, 73);
-} */
+
 .container__navigation-bullet:hover{
   filter: brightness(3);
 }
-
-/* @media only screen and (max-width: 1024px) {
-  .container__navigation {
-    bottom: 5.5rem;
-  }
-  .description {
-    bottom: 5rem;
-  }
-} */
 
 @media only screen and (max-width: 420px) {
   body {
     max-width: 25rem;
     display: block;
-    /* margin-left: auto; */
-    /* margin-right:  auto; */
-    /* display: revert; */
   }
 
-  /*.container {
-   padding-top: 90%;
-} */
   .container__navigation {
-    /* bottom: 0.5rem; */
     width: 20%;
-    /* left:50%; */
-    /* transform: translate(0, -240%); */
-    transform: translateY(-4.2rem);
-    /* transform: translateX(-50%); */
+    transform: translateY(-4.4rem);
     display: block;
     margin-left: auto;
     margin-right: auto;
